@@ -1,0 +1,21 @@
+CREATE DATABASE school;
+USE school;
+
+CREATE TABLE student_records (
+    roll_number INT(10) NOT NULL,
+    id INT(10) NOT NULL,
+    student_name VARCHAR(50) NOT NULL,
+    age INT(10) NOT NULL,
+    subject VARCHAR(50) NOT NULL,
+    semester INT(10) NOT NULL,
+    contact_number BIGINT NOT NULL
+);
+
+INSERT INTO student_records VALUES
+    (101, 456, "Ram", 20, "Computer Science", 3, 9876543210),
+    (102, 456, "Arjun", 22, "Mathematics", 5, 8876543220),
+    (103, 456, "Karn", 21, "Physics", 4, 9676543230),
+    (104, 456, "Krishna", 19, "Chemistry", 2, 9876543240);
+
+DESC student_records;
+SELECT * FROM student_records;
